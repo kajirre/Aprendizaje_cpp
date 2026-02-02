@@ -1,0 +1,18 @@
+# Concepto: Punteros y Memoria
+## Fecha: 2024-03-15
+
+### Lo que aprendí:
+1. Los punteros son variables que almacenan direcciones de memoria
+2. `&` obtiene la dirección, `*` dereferencia
+3. La memoria dinámica se reserva con `new` y se libera con `delete`
+
+### Errores comunes que cometí:
+- Olvidar inicializar punteros (punteros colgantes)
+- No liberar memoria (memory leaks)
+- Confundir `*` en declaración vs en uso
+
+### Ejemplo clave:
+```cpp
+int* ptr = new int(42);  // Reserva memoria
+cout << *ptr;            // Accede al valor
+delete ptr;              // Libera memoria
