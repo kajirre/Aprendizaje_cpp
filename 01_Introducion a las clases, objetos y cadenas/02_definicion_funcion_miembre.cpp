@@ -15,8 +15,9 @@ class LibroCalificaciones{
 
 
 int main(){
+
     string nombreDelCurso; 
-    LibroCalificaciones milibroCalificaciones;
+    LibroCalificaciones milibroCalificaciones; // se crea un objeto libro calificaciones llamado milibrocalificaciones
 
     // pide y recibe el nombre del curso como entrada
     cout << "Escriba el nombre del curso: " << endl;
@@ -25,7 +26,6 @@ int main(){
 
     // llama a la funcion mostrarMensaje de miLibroCalificaciones
     // y pasa nombreDelCurso como argumento
-
     milibroCalificaciones.mostrarMensaje(nombreDelCurso);
     return 0;
 }
