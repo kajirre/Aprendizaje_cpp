@@ -7,12 +7,16 @@ class Reloj{
     public:
     // Funcion que establece la hora
         void establecerNumeroHora ( int hora ){
-            horaReloj = hora;
+            if ( hora >= 1 && hora <= 23){
+                horaReloj = hora;
+            } else{
+                cout << "Error !! Hora invalida, se conserva la hora: " << horaReloj << endl;
+            }
         }
 
     // Funcion que obtiene el numero de hora
         int obtenerNumeroHora () const{
-            return horaReloj;
+            return horaReloj;z
         }
     // Funcion que muestra el numero de hora
         void mostrarHora () const{
